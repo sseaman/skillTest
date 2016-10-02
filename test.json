@@ -1,0 +1,45 @@
+{
+	"globals" : {
+		"execution" : { 
+			"workingDirectory" 	: "../skillVC/test/",
+			"entryPoint" 		: "index-FactoryFromDirectory.js"
+		},
+		"input" : {
+			"session" : {
+				"application" : {
+					"applicationId" : "sdscds"
+				}
+			},
+			"request" : {
+				"type": "IntentRequest",
+				"requestId": "string",
+				"timestamp": "string",
+				"locale": "string"
+			}
+		}
+	},	
+	"tests" : [
+		{
+			"name" : "Full Implementation",
+			"input" : {
+
+				"template" : "./request/intentRequest.json",
+
+
+
+				"request" : {
+					"intent": {
+						"name": "hello"
+					}
+		  		}
+		  	},
+		  	"result" : {
+		  		"response" : {
+		  			"outputSpeech" : { 
+		  				"text" : "hello worldXXX"
+		  			}
+		  		}
+		  	}
+		}
+	]
+}
