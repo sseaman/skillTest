@@ -22,10 +22,7 @@
 		{
 			"name" : "Full Implementation",
 			"input" : {
-
-				"template" : "./request/intentRequest.json",
-
-
+				"template" : "./lib/template/intentRequest.json",
 
 				"request" : {
 					"intent": {
