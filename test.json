@@ -1,8 +1,11 @@
 {
 	"globals" : {
-		"execution" : { 
-			"workingDirectory" 	: "../skillVC/test/",
-			"entryPoint" 		: "index-FactoryFromDirectory.js"
+		"executor" : {
+			"handler"	: "./lib/localTestExecutor.js",
+			"config"	: {
+				"workingDirectory" 	: "../skillVC/test/",
+				"entryPoint" 		: "index-FactoryFromDirectory.js"
+			}
 		},
 		"input" : {
 			"session" : {
@@ -31,7 +34,12 @@
 		  		}
 		  	},
 		  	"result" : {
-		  		"response" : {
+		  		"processor" : {
+		  			"handler"	: "xxxxx",
+		  			"config" 	: {}
+		  		},
+
+ 		  		"response" : {
 		  			"outputSpeech" : { 
 		  				"text" : "hello worldXXX"
 		  			}
