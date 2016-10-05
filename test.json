@@ -1,7 +1,7 @@
 {
 	"globals" : {
 		"executor" : {
-			"handler"	: "./lib/localTestExecutor.js",
+			"handler"	: "./lib/executor/localTestExecutor.js",
 			"config"	: {
 				"workingDirectory" 	: "../skillVC/test/",
 				"entryPoint" 		: "index-FactoryFromDirectory.js"
@@ -35,15 +35,16 @@
 		  	},
 		  	"result" : {
 		  		"processor" : {
-		  			"handler"	: "xxxxx",
-		  			"config" 	: {}
+		  			"handler"	: "/lib/DefaultTestResultHandler"
 		  		},
 
- 		  		"response" : {
-		  			"outputSpeech" : { 
-		  				"text" : "hello worldXXX"
-		  			}
-		  		}
+		  		"expected" : {
+	 		  		"response" : {
+			  			"outputSpeech" : { 
+			  				"text" : "hello worldXXX"
+			  			}
+			  		}
+			  	}
 		  	}
 		}
 	]
