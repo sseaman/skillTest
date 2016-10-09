@@ -1,0 +1,29 @@
+{
+  "name": "skillTest",
+  "version": "1.0.0",
+  "description": "A framework for functionally testing Alexa Skills.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "winston-simple": "^1.0.2",
+    "deep-extend": "^0.4.1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sseaman/skillTest.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/sseaman/skillTest/issues"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "test",
+    "node"
+  ],
+  "author": "Sloan Seaman",
+  "license": "Apache-2.0"
+}

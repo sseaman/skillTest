@@ -1,0 +1,40 @@
+{
+	"tests" : [
+		{
+			"name" : "Basic Success Test",
+			"executor" : {
+				"handler"	: "./lib/executor/localTestExecutor.js",
+				"config"	: {
+					"workingDirectory" 	: "..",
+					"entryPoint" 		: "index.js"
+				}
+			},
+			"input" : {
+				"template" 	: "./lib/template/intentRequest.json",
+				"session"	: {
+					"application" : {
+						"applicationId" : "some-app-id"
+					}
+				},
+				"request"  	: {
+					"intent" : {
+						"name" : "HelloIntent"
+					}
+				}
+			},
+			"result" : {
+		  		"processor" : {
+		  			"handler"	: "/lib/defaultTestResultHandler.js"
+		  		},
+
+		  		"expected" : {
+	 		  		"response" : {
+			  			"outputSpeech" : { 
+			  				"text" : "hello worldXXX"
+			  			}
+			  		}
+			  	}
+		  	}
+		}
+	]
+}
