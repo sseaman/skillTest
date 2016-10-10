@@ -1,0 +1,34 @@
+{
+			"name" : "{{testName}}",
+			{{executor}},
+			"input" : {
+				"template" 	: "{{intentTemplate}}",
+				"session"	: {
+					"application" : {
+						"applicationId" : ""
+					}
+				},
+				"request"  	: {
+					"type": "{{intentType}}",
+					"requestId": "string",
+					"timestamp": "string",
+					"locale": "string",
+					"intent" : {
+						"name" : "{{intentName}}",
+						{{slots}}
+					}
+				}
+			},
+			"result" : {
+		  		"processor" : {
+		  			"handler"	: "{{resultHandler}}"
+		  		},
+
+		  		"expected" : {
+				  		"response" : {
+				  			
+				  		}
+			  		}
+			  	}
+		  	}
+		}

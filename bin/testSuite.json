@@ -1,0 +1,46 @@
+{
+	"globals" : {},	
+	"tests" : [
+		{
+			"name" : "test",
+			"executor" : {
+				"handler"	: "localTestExecutor.js",
+				"config"	: {
+					"workingDirectory" 	: ".",
+					"entryPoint" 		: "index.js"
+				}
+			},
+			"input" : {
+				"template" 	: "intentRequest.json",
+				"session"	: {
+					"application" : {
+						"applicationId" : "{{applicationId}}"
+					}
+				},
+				"request"  	: {
+					"type": "IntentRequest",
+					"requestId": "string",
+					"timestamp": "string",
+					"locale": "string",
+					"intent" : {
+						"name" : "in",
+						"slots": {}
+					}
+				}
+			},
+			"result" : {
+		  		"processor" : {
+		  			"handler"	: "defaultTestResultHandler.js"
+		  		},
+
+		  		"expected" : {
+				  		"response" : {
+				  			
+				  		}
+			  		}
+			  	}
+		  	}
+		}
+
+	]
+}
